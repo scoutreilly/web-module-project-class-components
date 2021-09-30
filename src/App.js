@@ -3,15 +3,9 @@ import React from "react";
 import ToDoForm from "./components/TodoForm";
 import ToDoList from "./components/TodoList";
 
-const toDoList = [
-  {
-    toDoItem: "Drink some water",
-    id: 1,
-    completed: false,
-  },
-];
+const toDoList = [];
 
-var n = 1;
+var n = 0;
 function increment() {
   n++;
   return n;

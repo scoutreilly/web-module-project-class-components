@@ -4,7 +4,7 @@ import ToDo from "./Todo";
 
 const ToDoList = (props) => {
   const click = () => {
-    props.handleClear();
+    props.clear();
   };
 
   return (

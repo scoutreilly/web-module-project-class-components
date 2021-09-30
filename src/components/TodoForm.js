@@ -25,7 +25,7 @@ class ToDoForm extends React.Component {
     return (
       <div>
         <form onSubmit={this.submit}>
-          <label id="newToDo">
+          <label>
             <input type="text" name="newToDo" onChange={this.handleChanges} />
             <button>Add new todo item</button>
           </label>
