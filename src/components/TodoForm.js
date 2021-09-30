@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Form, Input, Label, Button } from "./StyledComponents/FormStyles";
+
 class ToDoForm extends React.Component {
   constructor() {
     super();
@@ -24,12 +26,13 @@ class ToDoForm extends React.Component {
   render() {
     return (
       <div>
-        <form onSubmit={this.submit}>
-          <label>
-            <input type="text" name="newToDo" onChange={this.handleChanges} />
-            <button>Add new todo item</button>
-          </label>
-        </form>
+        <Form onSubmit={this.submit}>
+          <Label>
+            What's on the agenda?
+            <Input type="text" name="newToDo" onChange={this.handleChanges} />
+            <Button>Add new item</Button>
+          </Label>
+        </Form>
       </div>
     );
   }

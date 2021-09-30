@@ -3,6 +3,8 @@ import React from "react";
 import ToDoForm from "./components/TodoForm";
 import ToDoList from "./components/TodoList";
 
+import Container from "./components/StyledComponents/ContainerStyled";
+
 const toDoList = [];
 
 var n = 0;
@@ -63,7 +65,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <Container>
         <h2>What's on your list today?</h2>
         <ToDoForm
           newItem={this.handleNewItem}
@@ -75,7 +77,7 @@ class App extends React.Component {
           toggle={this.handleToggle}
           toDoList={this.state.toDoList}
         />
-      </div>
+      </Container>
     );
   }
 }
