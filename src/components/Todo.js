@@ -1,5 +1,7 @@
 import React from "react";
 
+import { P } from "./StyledComponents/TextStyles";
+
 const ToDo = (props) => {
   const click = () => {
     props.toggle(props.todo.id);
@@ -10,7 +12,7 @@ const ToDo = (props) => {
       onClick={click}
       className={`todo${props.todo.completed ? " completed" : ""}`}
     >
-      <p>{props.todo.name}</p>
+      <P>{props.todo.name}</P>
     </div>
   );
 };

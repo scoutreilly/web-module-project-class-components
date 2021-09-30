@@ -4,6 +4,7 @@ import ToDoForm from "./components/TodoForm";
 import ToDoList from "./components/TodoList";
 
 import Container from "./components/StyledComponents/ContainerStyled";
+import { HeaderTwo } from "./components/StyledComponents/TextStyles";
 
 const toDoList = [];
 
@@ -66,7 +67,7 @@ class App extends React.Component {
   render() {
     return (
       <Container>
-        <h2>What's on your list today?</h2>
+        <HeaderTwo>What's on your list today?</HeaderTwo>
         <ToDoForm
           newItem={this.handleNewItem}
           setState={this.setState}

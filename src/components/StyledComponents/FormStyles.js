@@ -30,10 +30,11 @@ const Label = styled.label`
 `;
 
 const Button = styled.button`
-  padding: 0.5em;
+  padding: 0.5em 0.75em;
   background: #7e3d6b;
   color: white;
   font-size: 14px;
+  border: none;
   border-radius: 5px;
 `;
 
